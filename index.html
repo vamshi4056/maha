@@ -1,0 +1,263 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <h1 class="logo">Folio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header" class="j">Home</a></li>
+                    <li><a href="#about" class="j">About</a></li>
+                    <li><a href="#services" class="j">Services</a></li>
+                    <li><a href="#portfolio" class="j">Portfolio</a></li>
+                    <li><a href="#contact" class="j">Contact</a></li>
+                    <button id="mode" ondblclick="cmm()" onclick="cm()">change mode</button>
+
+
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()" id="fas"></i>
+
+
+
+
+                </ul>
+
+                <i class="fa-solid fa-bars" onclick="openmenu()" id="fa"></i>
+
+            </nav>
+            <div class="header-text">
+                <p class="text">UI/ux design</p>
+                <h1 class="textt">Hello It's Me </h1>
+                <p class="texttt">manogna</p>
+                <h2 class="tex">and i am a <span>MEAN Stack Developer</span> </h2>
+                <p class="te">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nesciunt ad, molestias quia repellendus sapiente inventore, velit, aliquid quas similique ipsa provident dolores culpa ipsam ex veniam numquam. Expedita, ipsa.</p>
+            </div>
+        </div>
+
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img class="aimg" src="ma.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p class="detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium enim repudiandae ipsa in soluta. Aperiam distinctio voluptatum, sint quod autem dolore quia quae impedit eos perferendis nam odio sequi iure?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                        <p class="tab-links" onclick="opentab('fresher')">fresher</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <h3> html<br> css <br> js <br> Java </h3>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <p class="term">2021-2025: ---------institute of technology <span>(btech)</span></p>
+                        <p class="term">2019-2021 : ----- junior college <span>(inter) </span></p>
+                        <p class="term">2018-2019 :----- high school <span>(school)</span></p>
+                    </div>
+                    <div class="tab-contents" id="fresher">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo qui voluptates dignissimos voluptatibus odit ex ipsum quibusdam minima, non tenetur iste odio. Hic impedit officia libero dolores sit mollitia?</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">my services</h1>
+            <div class="services-list">
+                <div class="hlo">
+                    <h2 class="host">web desgin</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing . Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad ipsa velit quam aspernatur, enim atque deleniti vel, numquam provident saepe laborum exercitationem aliquid nisi.
+                        Qui facere voluptatibus sed neque. Excepturi, facere eligendi explicabo a in aliquam dicta adipisci odit doloribus magnam tempora fugit nihil! In, dolore quidem aspernatur nostrum assumenda fugiat?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="hlo">
+                    <h2 class="host">front end</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing . Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad ipsa velit quam aspernatur, enim atque deleniti vel, numquam provident saepe laborum exercitationem aliquid nisi.
+                        Qui facere voluptatibus sed neque. Excepturi, facere eligendi explicabo a in aliquam dicta adipisci odit doloribus magnam tempora fugit nihil! In, dolore quidem aspernatur nostrum assumenda fugiat?</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="hlo">
+                    <h2 class="host">full stack</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing . Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad ipsa velit quam aspernatur, enim atque deleniti vel, numquam provident saepe laborum exercitationem aliquid nisi.
+                        Qui facere voluptatibus sed neque. Excepturi, facere eligendi explicabo a in aliquam dicta adipisci odit doloribus magnam tempora fugit nihil! In, dolore quidem aspernatur nostrum assumenda fugiat?</p>
+                    <a href="#">learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">my work</h1>
+            <div class="skills-container">
+                <h1>My Technical Skills</h1>
+                <div class="skill">
+                    <i class="fab fa-html5"></i>
+                    <div class="skill-info">
+                        <p>HTML</p>
+                        <div class="skill-bar">
+                            <div class="skill-level html"></div>
+                        </div>
+                        <span class="percentage">90%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-css3-alt"></i>
+                    <div class="skill-info">
+                        <p>CSS</p>
+                        <div class="skill-bar">
+                            <div class="skill-level css"></div>
+                        </div>
+                        <span class="percentage">85%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-js"></i>
+                    <div class="skill-info">
+                        <p>JavaScript</p>
+                        <div class="skill-bar">
+                            <div class="skill-level js"></div>
+                        </div>
+                        <span class="percentage">75%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <i class="fab fa-react"></i>
+                    <div class="skill-info">
+                        <p>communication skills</p>
+                        <div class="skill-bar">
+                            <div class="skill-level react"></div>
+                        </div>
+                        <span class="percentage">70%</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <a href="#" class="btn">see more</a>
+
+    </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact me</h1>
+                    <p>contacmail</p>
+                    <p>1234356478596</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Cb%7Cfb%20sign%20up%7C&placement=&creative=589460569891&keyword=fb%20sign%20up&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-294779041346%26loc_physical_ms%3D9050507%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQiAoKeuBhCoARIsAB4Wxtdy7Es4x5xGaYt-wPvtnPs7BiGRufGJyJfgJ9VDOciPObHQlgZ0KAYaAuVIEALw_wcB"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://www.discardless.eu/twitter.com/login62b1.html?lang=en-gb"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn-2">download cv</a>
+                </div>
+                <div class="contact-right">
+
+                    <input type="text" name="name" placeholder="yourname" required class="s">
+                    <input type="email" name="email" placeholder="your mail" required class="s">
+                    <textarea name="message" placeholder="your message" rows="6" class="s"></textarea>
+
+                    <button type="submit" class="btn btn-2">submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+
+
+
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200";
+        }
+        let modebtn = document.querySelector("#mode");
+        let body = document.querySelector("body");
+        let cumode = "light";
+        modebtn.addEventListener("click", () => {
+            if (cumode === "light") {
+                cumode = "dark";
+                body.classList.add("dark");
+                body.classList.remove("light");
+            } else {
+                cumode = "light";
+                body.classList.add("light");
+                body.classList.remove("dark");
+            }
+            console.log(cumode);
+        })
+
+        function cm() {
+
+            document.getElementById("mode").style.backgroundColor = "black"
+            document.getElementById("mode").style.color = "white"
+        }
+
+        function cmm() {
+
+            document.getElementById("mode").style.backgroundColor = "white"
+            document.getElementById("mode").style.color = "black"
+        }
+
+        function hm() {
+
+            document.getElementById("hide").style.display = "none"
+
+
+        }
+
+        function hmm() {
+
+            document.getElementById("hide").style.display = "block"
+
+        }
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
